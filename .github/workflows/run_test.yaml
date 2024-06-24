@@ -13,6 +13,6 @@ jobs:
       - name: Install dependencies
         run: go mod download
       - name: Build
-        run: go build -v ./...
+        run: go build ./cmd/server/main.go
       - name: Test with the Go CLI
-        run: go test
+        run: go test -v ./...
